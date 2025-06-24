@@ -140,7 +140,7 @@
 </MAP>
 </INVOKE>
 
-<INVOKE TIMEOUT="" SERVICE="ipaas.controlplane.agent.sequence.KongKonnect:S4_MetricsSync_KongKonnect" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="ipaas.controlplane.agent.sequence.KongKonnect.SingleGateway:S4_MetricsSync_KongKonnect" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 </INVOKE>
 

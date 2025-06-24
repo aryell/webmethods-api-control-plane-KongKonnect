@@ -6,7 +6,7 @@
   <!-- nodes -->
 
 <INVOKE TIMEOUT="" SERVICE="ipaas.controlplane.runtime.kong:getServices" VALIDATE-IN="$none" VALIDATE-OUT="$none">
-  <COMMENT></COMMENT>
+  <COMMENT>get list of Services on Single workspace</COMMENT>
 </INVOKE>
 
 <INVOKE TIMEOUT="" SERVICE="ipaas.controlplane.runtime.kong:parseRuntimeIds" VALIDATE-IN="$none" VALIDATE-OUT="$none">
@@ -487,11 +487,13 @@
                 </record>
                 <value name="is_public">false</value>
                 <value name="field_name">tags</value>
-                <value name="field_type">object</value>
-                <value name="field_dim">0</value>
+                <value name="field_type">string</value>
+                <value name="field_dim">1</value>
+                <value name="field_opt">true</value>
                 <value name="nillable">true</value>
                 <value name="form_qualified">false</value>
                 <value name="is_global">false</value>
+                <value name="is_soap_array_encoding_used">false</value>
               </record>
               <record javaclass="com.wm.util.Values">
                 <value name="node_type">unknown</value>
@@ -1381,11 +1383,13 @@
                 </record>
                 <value name="is_public">false</value>
                 <value name="field_name">tags</value>
-                <value name="field_type">object</value>
-                <value name="field_dim">0</value>
+                <value name="field_type">string</value>
+                <value name="field_dim">1</value>
+                <value name="field_opt">true</value>
                 <value name="nillable">true</value>
                 <value name="form_qualified">false</value>
                 <value name="is_global">false</value>
+                <value name="is_soap_array_encoding_used">false</value>
               </record>
               <record javaclass="com.wm.util.Values">
                 <value name="node_type">unknown</value>
@@ -1944,11 +1948,13 @@
                 </record>
                 <value name="is_public">false</value>
                 <value name="field_name">tags</value>
-                <value name="field_type">object</value>
-                <value name="field_dim">0</value>
+                <value name="field_type">string</value>
+                <value name="field_dim">1</value>
+                <value name="field_opt">true</value>
                 <value name="nillable">true</value>
                 <value name="form_qualified">false</value>
                 <value name="is_global">false</value>
+                <value name="is_soap_array_encoding_used">false</value>
               </record>
               <record javaclass="com.wm.util.Values">
                 <value name="node_type">unknown</value>
@@ -2423,11 +2429,13 @@
                 </record>
                 <value name="is_public">false</value>
                 <value name="field_name">tags</value>
-                <value name="field_type">object</value>
-                <value name="field_dim">0</value>
+                <value name="field_type">string</value>
+                <value name="field_dim">1</value>
+                <value name="field_opt">true</value>
                 <value name="nillable">true</value>
                 <value name="form_qualified">false</value>
                 <value name="is_global">false</value>
+                <value name="is_soap_array_encoding_used">false</value>
               </record>
               <record javaclass="com.wm.util.Values">
                 <value name="node_type">unknown</value>
@@ -2968,11 +2976,13 @@
                 </record>
                 <value name="is_public">false</value>
                 <value name="field_name">tags</value>
-                <value name="field_type">object</value>
-                <value name="field_dim">0</value>
+                <value name="field_type">string</value>
+                <value name="field_dim">1</value>
+                <value name="field_opt">true</value>
                 <value name="nillable">true</value>
                 <value name="form_qualified">false</value>
                 <value name="is_global">false</value>
+                <value name="is_soap_array_encoding_used">false</value>
               </record>
               <record javaclass="com.wm.util.Values">
                 <value name="node_type">unknown</value>
@@ -3521,11 +3531,13 @@
                 </record>
                 <value name="is_public">false</value>
                 <value name="field_name">tags</value>
-                <value name="field_type">object</value>
-                <value name="field_dim">0</value>
+                <value name="field_type">string</value>
+                <value name="field_dim">1</value>
+                <value name="field_opt">true</value>
                 <value name="nillable">true</value>
                 <value name="form_qualified">false</value>
                 <value name="is_global">false</value>
+                <value name="is_soap_array_encoding_used">false</value>
               </record>
               <record javaclass="com.wm.util.Values">
                 <value name="node_type">unknown</value>
@@ -4146,11 +4158,13 @@
                 </record>
                 <value name="is_public">false</value>
                 <value name="field_name">tags</value>
-                <value name="field_type">object</value>
-                <value name="field_dim">0</value>
+                <value name="field_type">string</value>
+                <value name="field_dim">1</value>
+                <value name="field_opt">true</value>
                 <value name="nillable">true</value>
                 <value name="form_qualified">false</value>
                 <value name="is_global">false</value>
+                <value name="is_soap_array_encoding_used">false</value>
               </record>
               <record javaclass="com.wm.util.Values">
                 <value name="node_type">unknown</value>
@@ -4471,9 +4485,6 @@
 <MAPCOPY FROM="/response;2;0/data;2;0/name;1;0" TO="/APIProperties;4;0;ipaas.controlplane.docs:APIProperties/name;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/response;2;0/data;2;0/tags;3;0" TO="/APIProperties;4;0;ipaas.controlplane.docs:APIProperties/tags;1;1" CONDITION="%response/data/tags%!=null">
-</MAPCOPY>
-
 <MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/APIProperties;4;0;ipaas.controlplane.docs:APIProperties/versionSetId;1;0">
   <DATA ENCODING="XMLValues" I18N="true">
 
@@ -4512,6 +4523,9 @@
 </MAPCOPY>
 
 <MAPCOPY FROM="/response;2;0/data;2;0/type;1;0" TO="/APIProperties;4;0;ipaas.controlplane.docs:APIProperties/type;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/response;2;0/data;2;0/tags;1;1" TO="/APIProperties;4;0;ipaas.controlplane.docs:APIProperties/tags;1;1">
 </MAPCOPY>
 </MAP>
 </INVOKE>

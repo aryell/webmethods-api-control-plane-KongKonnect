@@ -5,7 +5,7 @@
 
   <!-- nodes -->
 
-<INVOKE TIMEOUT="" SERVICE="ipaas.controlplane.agent.sequence.KongKonnect.support:_S4_MetricsPrepare_KongKonnect" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="ipaas.controlplane.agent.sequence.KongKonnect.SingleGateway.support:_S4_MetricsPrepare_KongKonnect" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
@@ -17,7 +17,7 @@
 </MAP>
 </INVOKE>
 
-<INVOKE TIMEOUT="" SERVICE="ipass.controlplane.sdk:PostRuntimeMetrics" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="ipaas.controlplane.sdk:PostRuntimeMetrics" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
