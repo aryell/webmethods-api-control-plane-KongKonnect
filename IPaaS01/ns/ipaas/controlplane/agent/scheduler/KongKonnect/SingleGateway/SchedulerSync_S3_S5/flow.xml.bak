@@ -100,7 +100,7 @@
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">
-  <value name="xml">KongKonnect:SchedulerSync_S4 START</value>
+  <value name="xml">SchedulerSync_S3_S5 START</value>
   <record name="type" javaclass="com.wm.util.Values">
     <value name="node_type">field</value>
     <value name="node_subtype">unknown</value>
@@ -140,7 +140,20 @@
 </MAP>
 </INVOKE>
 
-<INVOKE TIMEOUT="" SERVICE="ipaas.controlplane.agent.sequence.KongKonnect:S4_MetricsSync_KongKonnect" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="ipaas.controlplane.agent.sequence.KongKonnect.SingleGateway:S3_HeartbeatSync_KongKonnect" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+</MAP>
+</INVOKE>
+
+<INVOKE TIMEOUT="" SERVICE="pub.flow:clearPipeline" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+</INVOKE>
+
+<INVOKE TIMEOUT="" SERVICE="ipaas.controlplane.agent.sequence.KongKonnect.SingleGateway:S5_AssetsSync_KongKonnect" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 </INVOKE>
 
@@ -260,7 +273,7 @@
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">
-  <value name="xml">KongKonnect:SchedulerSync_S4 END</value>
+  <value name="xml">SchedulerSync_S3_S5 END</value>
   <record name="type" javaclass="com.wm.util.Values">
     <value name="node_type">field</value>
     <value name="node_subtype">unknown</value>
