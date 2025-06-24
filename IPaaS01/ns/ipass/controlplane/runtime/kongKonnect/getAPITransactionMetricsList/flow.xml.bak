@@ -591,7 +591,7 @@
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">
-  <value name="xml">{"metrics":["request_count", "response_latency_average", "upstream_latency_average", "kong_latency_average"],"dimensions":[],"time_range":{"type":"relative","time_range":"%time_range%","tz":"Asia/%VARS/hostLocation%"},"filters":[{"dimension":"gateway_service","type":"in","values":["%VARS/controlPlaneId%:%serviceId%"]}]}</value>
+  <value name="xml">{"metrics":["request_count", "response_latency_average", "upstream_latency_average", "kong_latency_average"],"dimensions":[],"time_range":{"type":"relative","time_range":"%time_range%","tz":"Asia/%VARS/hostLocation%"},"filters":[{"field":"gateway_service","operator":"in","value":["%VARS/controlPlaneId%:%serviceId%"]}]}</value>
   <record name="type" javaclass="com.wm.util.Values">
     <value name="node_type">unknown</value>
     <value name="node_subtype">unknown</value>
