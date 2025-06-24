@@ -120,7 +120,7 @@
       </record>
       <record javaclass="com.wm.data.ISMemDataImpl">
         <value name="key">ControlPlane_KongKonnectRuntimeId</value>
-        <value name="value">00154896-773a-4289-a7c4-2b039d5a08a5</value>
+        <value name="value">2ea38634-3b2d-4e6a-b39d-2025a896f726</value>
         <value name="isSecure">false</value>
       </record>
       <record javaclass="com.wm.data.ISMemDataImpl">
