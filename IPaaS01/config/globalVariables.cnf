@@ -125,12 +125,12 @@
       </record>
       <record javaclass="com.wm.data.ISMemDataImpl">
         <value name="key">Runtime_Id_KongKonnect</value>
-        <value name="value">none</value>
+        <value name="value">94a2c3d3-1bbc-4aeb-bd4c-633582f158fd</value>
         <value name="isSecure">false</value>
       </record>
       <record javaclass="com.wm.data.ISMemDataImpl">
         <value name="key">Runtime_Id_Kong</value>
-        <value name="value">none</value>
+        <value name="value">c6ddb1c6-760f-4ffc-a20d-c3bed714a547</value>
         <value name="isSecure">false</value>
       </record>
       <record javaclass="com.wm.data.ISMemDataImpl">
