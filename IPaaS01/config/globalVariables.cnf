@@ -19,11 +19,6 @@
         <value name="isSecure">true</value>
       </record>
       <record javaclass="com.wm.data.ISMemDataImpl">
-        <value name="key">ControlPlane_HeartBeatSynchIntervalSeconds</value>
-        <value name="value">300</value>
-        <value name="isSecure">false</value>
-      </record>
-      <record javaclass="com.wm.data.ISMemDataImpl">
         <value name="key">Kong_HostUiUrl</value>
         <value name="value">http://localhost:8001</value>
         <value name="isSecure">false</value>
@@ -41,16 +36,6 @@
       <record javaclass="com.wm.data.ISMemDataImpl">
         <value name="key">Kong_RuntimeType</value>
         <value name="value">7a9e0625-3217-4b36-a236-31a51241f6af</value>
-        <value name="isSecure">false</value>
-      </record>
-      <record javaclass="com.wm.data.ISMemDataImpl">
-        <value name="key">Kong_CPRuntimeId</value>
-        <value name="value">bd56582c-a59d-460c-a81e-70fe49bd8d00</value>
-        <value name="isSecure">false</value>
-      </record>
-      <record javaclass="com.wm.data.ISMemDataImpl">
-        <value name="key">Kong_ControlPlaneId</value>
-        <value name="value">4bda7e7f-610a-4215-8252-edddcd373f5e</value>
         <value name="isSecure">false</value>
       </record>
       <record javaclass="com.wm.data.ISMemDataImpl">
@@ -75,7 +60,12 @@
       </record>
       <record javaclass="com.wm.data.ISMemDataImpl">
         <value name="key">Kong_HeartBeathIntervalSec</value>
-        <value name="value">300</value>
+        <value name="value">120</value>
+        <value name="isSecure">false</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">KongKonnect_ControlPlaneId</value>
+        <value name="value">6421a25b-018c-4dbd-aecc-3021cc4709ea</value>
         <value name="isSecure">false</value>
       </record>
       <record javaclass="com.wm.data.ISMemDataImpl">
@@ -86,16 +76,6 @@
       <record javaclass="com.wm.data.ISMemDataImpl">
         <value name="key">KongKonnect_RuntimeType</value>
         <value name="value">7a9e0625-3217-4b36-a236-31a51241f6af</value>
-        <value name="isSecure">false</value>
-      </record>
-      <record javaclass="com.wm.data.ISMemDataImpl">
-        <value name="key">KongKonnect_CPRuntimeId</value>
-        <value name="value">d7462a8f-fb87-4788-b9b1-d17f49ee0943</value>
-        <value name="isSecure">false</value>
-      </record>
-      <record javaclass="com.wm.data.ISMemDataImpl">
-        <value name="key">KongKonnect_ControlPlaneId</value>
-        <value name="value">6421a25b-018c-4dbd-aecc-3021cc4709ea</value>
         <value name="isSecure">false</value>
       </record>
       <record javaclass="com.wm.data.ISMemDataImpl">
@@ -140,7 +120,17 @@
       </record>
       <record javaclass="com.wm.data.ISMemDataImpl">
         <value name="key">KongKonnect_HeartBeathIntervalSec</value>
-        <value name="value">300</value>
+        <value name="value">120</value>
+        <value name="isSecure">false</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">Runtime_Id_KongKonnect</value>
+        <value name="value">none</value>
+        <value name="isSecure">false</value>
+      </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">Runtime_Id_Kong</value>
+        <value name="value">none</value>
         <value name="isSecure">false</value>
       </record>
       <record javaclass="com.wm.data.ISMemDataImpl">

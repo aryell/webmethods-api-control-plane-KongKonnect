@@ -66,7 +66,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">ipass.controlplane.docs:APIProperties</value>
+        <value name="rec_ref">ipaas.controlplane.docs:APIProperties</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -191,6 +191,25 @@
             </record>
             <value name="is_public">false</value>
             <value name="field_name">heartbeatsBulkURL</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <array name="field_options" type="value" depth="1">
+            </array>
+            <value name="nillable">true</value>
+            <value name="form_qualified">false</value>
+            <value name="is_global">false</value>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">record</value>
+            <value name="node_subtype">unknown</value>
+            <value name="node_comment"></value>
+            <record name="node_hints" javaclass="com.wm.util.Values">
+              <value name="field_usereditable">true</value>
+              <value name="field_largerEditor">false</value>
+              <value name="field_password">false</value>
+            </record>
+            <value name="is_public">false</value>
+            <value name="field_name">metricsURL</value>
             <value name="field_type">string</value>
             <value name="field_dim">0</value>
             <array name="field_options" type="value" depth="1">
@@ -493,7 +512,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">ipass.controlplane.docs:APIProperties</value>
+        <value name="rec_ref">ipaas.controlplane.docs:APIProperties</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -524,7 +543,7 @@
 
   <!-- nodes -->
 
-<MAPCOPY FROM="/APIProperties;4;0;ipass.controlplane.docs:APIProperties" TO="/document;2;0">
+<MAPCOPY FROM="/APIProperties;4;0;ipaas.controlplane.docs:APIProperties" TO="/document;2;0">
 </MAPCOPY>
 </MAP>
 
@@ -593,7 +612,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">ipass.controlplane.docs:APIProperties</value>
+        <value name="rec_ref">ipaas.controlplane.docs:APIProperties</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -1234,7 +1253,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">ipass.controlplane.docs:APIProperties</value>
+        <value name="rec_ref">ipaas.controlplane.docs:APIProperties</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -1359,6 +1378,25 @@
             </record>
             <value name="is_public">false</value>
             <value name="field_name">heartbeatsBulkURL</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <array name="field_options" type="value" depth="1">
+            </array>
+            <value name="nillable">true</value>
+            <value name="form_qualified">false</value>
+            <value name="is_global">false</value>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">record</value>
+            <value name="node_subtype">unknown</value>
+            <value name="node_comment"></value>
+            <record name="node_hints" javaclass="com.wm.util.Values">
+              <value name="field_usereditable">true</value>
+              <value name="field_largerEditor">false</value>
+              <value name="field_password">false</value>
+            </record>
+            <value name="is_public">false</value>
+            <value name="field_name">metricsURL</value>
             <value name="field_type">string</value>
             <value name="field_dim">0</value>
             <array name="field_options" type="value" depth="1">
@@ -1643,7 +1681,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">ipass.controlplane.docs:APIProperties</value>
+        <value name="rec_ref">ipaas.controlplane.docs:APIProperties</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -1879,7 +1917,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">ipass.controlplane.docs:APIProperties</value>
+        <value name="rec_ref">ipaas.controlplane.docs:APIProperties</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -2047,6 +2085,10 @@
 </MAPDELETE>
 </MAP>
 </INVOKE>
+
+<EXIT NAME="$default" FROM="$flow" SIGNAL="FAILURE" FAILURE-MESSAGE="(sdk:UpdateAPI) %header/status% %header/statusMessage% (RuntimeId)">
+  <COMMENT></COMMENT>
+</EXIT>
 </BRANCH>
 
 <INVOKE TIMEOUT="" SERVICE="pub.flow:clearPipeline" VALIDATE-IN="$none" VALIDATE-OUT="$none">

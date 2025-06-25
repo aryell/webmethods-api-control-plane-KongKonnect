@@ -3609,8 +3609,8 @@
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
         <array name="field_options" type="value" depth="1">
-          <value>KongKonnect_CPRuntimeId</value>
-          <value>Kong_CPRuntimeId</value>
+          <value>Runtime_Id_KongKonnect</value>
+          <value>Runtime_Id_Kong</value>
         </array>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
@@ -3646,7 +3646,7 @@
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">
-  <value name="xml">KongKonnect_CPRuntimeId</value>
+  <value name="xml">Runtime_Id_KongKonnect</value>
   <record name="type" javaclass="com.wm.util.Values">
     <value name="node_type">field</value>
     <value name="node_subtype">unknown</value>
@@ -3661,8 +3661,8 @@
     <value name="field_type">string</value>
     <value name="field_dim">0</value>
     <array name="field_options" type="value" depth="1">
-      <value>KongKonnect_CPRuntimeId</value>
-      <value>Kong_CPRuntimeId</value>
+      <value>Runtime_Id_KongKonnect</value>
+      <value>Runtime_Id_Kong</value>
     </array>
     <value name="nillable">true</value>
     <value name="form_qualified">false</value>
