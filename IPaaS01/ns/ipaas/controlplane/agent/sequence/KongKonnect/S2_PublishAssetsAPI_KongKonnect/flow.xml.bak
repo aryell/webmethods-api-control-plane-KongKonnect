@@ -6,7 +6,7 @@
   <!-- nodes -->
 
 <INVOKE TIMEOUT="" SERVICE="ipaas.controlplane.runtime.kongKonnect:getServices" VALIDATE-IN="$none" VALIDATE-OUT="$none">
-  <COMMENT>get list of single Kong runtime gateway</COMMENT>
+  <COMMENT>get list from single Kong runtime gateway</COMMENT>
 </INVOKE>
 
 <INVOKE TIMEOUT="" SERVICE="ipaas.controlplane.runtime.kongKonnect:parseRuntimeIds" VALIDATE-IN="$none" VALIDATE-OUT="$none">
